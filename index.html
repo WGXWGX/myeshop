@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+</head>
+<body style="height: 3000px;">
+    <div class="header">
+        <div class="wrapper">
+            <div class="main-header">
+                <a href="#" id="login">LOGIN</a>
+                <div class="cart">
+                    <a href="#">
+                        <h3>
+                            Cart: <span class="money">0</span>(<span class="quantity">0</span>)
+                            <img src="img/cart.png"/>
+                        </h3>
+                        <p>empty cart</p>
+                    </a>
+
+                </div>
+                <div class="logo">
+                    <a href="index.html">NEW FASHIONS</a>
+                </div>
+            </div>
+            <div class="menu">
+                <ul class="nav wrapper">
+                    <li class="active"><a href="#">HOME</a></li>
+                    <li><a href="#">WOMEN</a></li>
+                    <li><a href="#">MEN</a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="#">SHOP ONLINE</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="caption">
+            <h1>FASHION AND CREATIVITY</h1>
+            <p>Sed dapibus est a lorem dictum, id dignissim lacus fermentum. Nulla ut nibh in libero maximus pretium
+                Nunc vulputate vel tellus ac elementum. Duis nec tincidunt dolor, ac dictum eros.</p>
+        </div>
+    </div>
+    <div class="product wrapper">
+        <ul class="product-tags">
+            <li>Best seller</li>
+            <li>Popular</li>
+            <li>New Arrivals</li>
+        </ul>
+        <div id="loading">
+            <img src="img/load.gif" alt=""/>
+        </div>
+        <ul id="product-list">
+            <!--<li>-->
+                <!--<img src="upload/products/bs1.jpg" alt=""/>-->
+                <!--<div class="product-info">-->
+                    <!--<h3 class="product-name">BELLE B&W</h3>-->
+                    <!--<strong class="product-price">$187.95</strong>-->
+                    <!--<input type="text" value="1" class="quantity"/>-->
+                    <!--<button class="btn-add-cart">ADD</button>-->
+                <!--</div>-->
+            <!--</li>-->
+            <!--<li>-->
+                <!--<img src="upload/products/bs2.jpg" alt=""/>-->
+                <!--<div class="product-info">-->
+                    <!--<h3 class="product-name">CLUBYORK</h3>-->
+                    <!--<strong class="product-price">$187.95</strong>-->
+                    <!--<input type="text" value="1" class="quantity"/>-->
+                    <!--<button class="btn-add-cart">ADD</button>-->
+                <!--</div>-->
+            <!--</li>-->
+            <!--<li>-->
+                <!--<img src="upload/products/bs3.jpg" alt=""/>-->
+                <!--<div class="product-info">-->
+                    <!--<h3 class="product-name">ROADSTER</h3>-->
+                    <!--<strong class="product-price">$220.95</strong>-->
+                    <!--<input type="text" value="1" class="quantity"/>-->
+                    <!--<button class="btn-add-cart">ADD</button>-->
+                <!--</div>-->
+            <!--</li>-->
+        </ul>
+        <div id="load-more">
+            加载更多...
+        </div>
+    </div>
+    <script id="product-tpl" type="text/html">
+        <li class="product-item">
+            <img src="{{img}}" alt=""/>
+            <div class="product-info">
+                <h3 class="product-name">{{name}}</h3>
+                <strong class="product-price">{{price}}</strong>
+                <input type="text" value="{{quantity}}" class="quantity"/>
+                <button class="btn-add-cart">ADD</button>
+            </div>
+        </li>
+    </script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/template.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
